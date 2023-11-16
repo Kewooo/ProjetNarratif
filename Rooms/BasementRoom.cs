@@ -26,7 +26,7 @@ namespace ProjetNarratif.Rooms
                         
 
                     }break;
-                case "salle": { Game.Transition<Boucherie>(); }break;
+                case "salle": { Game.Transition<Boucherie>();   }break;
 
                 case "toilette": 
                     {

@@ -24,7 +24,7 @@ namespace ProjetNarratif.Rooms
             {
                 case  "porte": 
                     {
-                    
+                        Game.Transition<Armoire>();
                     
                     
                     }break;
