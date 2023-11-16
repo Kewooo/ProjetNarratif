@@ -7,7 +7,7 @@
              
 @"Dans la toilette, le [bain] est rempli d'eau chaude mais une odeur bizarre s'y presente.
 Le [miroir] devant toi affiche ton visage angoisser et tendu.
-
+Tu regardes proche du miroir et tu apercois une [porte] cacher
 Tu peux revenir dans ta [chambre].
 ";
 

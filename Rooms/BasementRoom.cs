@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics.Contracts;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -10,7 +11,8 @@ namespace ProjetNarratif.Rooms
     {
         internal override string CreateDescription()
         {
-            return "Woah, je ne pensais pas que vous alliez decouvrir cette Salle[toilette], vous apercevez une ombre au loin de cette salle, des lumieres rouges , des chants tres louche selon vous";
+            return "Woah, je ne pensais pas que vous alliez decouvrir cette Salle[toilette], vous apercevez une ombre au loin de cette salle, des lumieres rouges , des chants tres louche selon vous\n\n" +
+                "vous avez tres peur et donc vous vous refugiez a la [salle] la plus proche";
             throw new NotImplementedException();
         }
 
@@ -24,6 +26,7 @@ namespace ProjetNarratif.Rooms
                         
 
                     }break;
+                case "salle": { Game.Transition<Boucherie>(); }break;
 
                 case "toilette": 
                     {

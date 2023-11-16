@@ -8,6 +8,11 @@ game.Add(new AtticRoom());
 game.Add(new BarRoom());
 game.Add(new BasementRoom());
 game.Add(new Boucherie());
+game.Add(new Armoire());
+
+
+
+
 while (!game.IsGameOver())
 {
     Console.WriteLine("--");
