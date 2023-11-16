@@ -5,7 +5,9 @@ var game = new Game();
 game.Add(new Bedroom());
 game.Add(new Bathroom());
 game.Add(new AtticRoom());
-
+game.Add(new BarRoom());
+game.Add(new BasementRoom());
+game.Add(new Boucherie());
 while (!game.IsGameOver())
 {
     Console.WriteLine("--");
