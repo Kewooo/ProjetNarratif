@@ -8,6 +8,7 @@ Un mal de tête poignant vous prends.
 Vous n'êtes pas conscient de votre situation ni de l'endroit ou vous vous trouvez.
 Tu vois une [note] avec un message sur ta table de chevet
 Tu décides d'aller vers ta [toilette]
+Vous voyez aussi un petit jeu de [devinette]
 
 ";
 
@@ -28,7 +29,14 @@ Tu décides d'aller vers ta [toilette]
                         "Celle-ci consiste a trouver l'ordinateur et copier les fichiers et ensuite s'enfuire avec le disque dur");
                     
                     break;
+                case "devinette":
+                    Game.Transition<DevineRoom>();
+                    
+                    break;
+            
+            
             }
+
         }
     }
 }

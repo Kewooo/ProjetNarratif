@@ -11,6 +11,7 @@ game.Add(new Boucherie());
 game.Add(new Armoire());
 game.Add(new Ombre());
 game.Add(new SalleVide());
+game.Add(new DevineRoom());
 
 
 
