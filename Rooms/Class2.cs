@@ -6,54 +6,25 @@ using System.Threading.Tasks;
 
 namespace ProjetNarratif.Rooms
 {
-    internal class Armoire : Room
+    internal class SalleVide :Room 
     {
+
         internal override string CreateDescription()
         {
-            ;
-            return "Vous ouvrez la porte et ce qui est face a vous est ignoble et cruel;\n\n" +
-                "3 corps demembrer et des ecriture en latin, vous voulez absolument fermer la [porte]";
+            return "Vous faites le tour de cette salle,il y a quelques trace de sang, des ecritures bizzares,\n\n" +
+                " mais sinon elle est vide\n\n" +
+                "Vous revenez donc en [arriere]";
             throw new NotImplementedException();
         }
         internal override void ReceiveChoice(string choice)
         {
             switch (choice)
             {
-                case "porte": 
-                    {
-                        Game.Transition<Boucherie>();
+                case "arriere":
+                    Game.Transition<BasementRoom>();
                     
-                    }break;
-
+                    break;
             }
         }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
     }
 }

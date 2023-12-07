@@ -11,8 +11,9 @@ namespace ProjetNarratif.Rooms
     {
         internal override string CreateDescription()
         {
-            return "Woah, je ne pensais pas que vous alliez decouvrir cette Salle[toilette], vous apercevez une ombre au loin de cette salle, des lumieres rouges , des chants tres louche selon vous\n\n" +
-                "vous avez tres peur et donc vous vous refugiez a la [salle] la plus proche";
+            return "Vous apercevez une ombre au loin de cette salle, des lumieres rouges , des chants tres louche selon vous\n\n" +
+                "Vous avez tres peur et donc vous vous refugiez a la plus proche\n\n" +
+                "vous avez le choix entre vous refugiez dans la [salle] la plus proche ou allez vers l'[ombre]";
             throw new NotImplementedException();
         }
 
@@ -22,17 +23,16 @@ namespace ProjetNarratif.Rooms
             {
                 case "ombre":
                     {
-                        Console.WriteLine("vous decidez d'y avancer quand meme, les chants augmente de decibels, vous voyez des gens en capuche rouge, un d'entre eux vous apercois, il commence a vous attaquer");
+                        Game.Transition<Ombre>();
                         
 
                     }break;
-                case "salle": { Game.Transition<Boucherie>();   }break;
+                case "salle":
 
-                case "toilette": 
-                    {
-                        Game.Transition<Bathroom>();          
-                    
-                    }break;
+                    Game.Transition<SalleVide>();
+                    break;
+
+                
             }
 
         }

@@ -8,6 +8,6 @@ namespace ProjetNarratif
 {
     internal class Joueur
     {
-
+    
     }
 }

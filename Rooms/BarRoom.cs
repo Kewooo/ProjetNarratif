@@ -11,7 +11,9 @@ namespace ProjetNarratif.Rooms
         internal override string CreateDescription()
 
         {
-            return "Bienvenue au Bar de la secte [porte] pour explorer les parties mysterieuses de la maison si vous avez peur [toilette] pour revenir en arriere ";                                                                          
+            return "Vous ne savez pas vous etes ou, mais vous avez envie d'explorer et d'entrer dans les differentes salles.\n\n" +
+                " vous apercevez un [porte] a votre droite.\n\n" +
+                "Si vous avez peur vous pouvez revenir a la [toilette]";                                                                          
             throw new NotImplementedException();
         }
 
