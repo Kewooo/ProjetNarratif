@@ -10,7 +10,7 @@ namespace ProjetNarratif.Rooms
     {
         internal override string CreateDescription()
         {
-            return ("Bonjour je vais vous poser une [enigme]");
+            return ("Bonjour je vais vous poser une [devinette][retour]");
 
             throw new NotImplementedException();
 
@@ -20,7 +20,7 @@ namespace ProjetNarratif.Rooms
         {
             switch (choice)
             {
-                case "enigme":
+                case "devinette":
                     {
                         int nombreEssais = 2;
 
@@ -63,12 +63,17 @@ namespace ProjetNarratif.Rooms
                                 Console.WriteLine("Désolé, vous n'avez plus d'essais. Le mot magique était '{0}'.", motMagique);
                             }
 
-
+                            
 
                         }
                         break;
 
                     }
+                case "retour":
+
+                    Game.Transition<Bedroom>();
+                    
+                    break;
             }
 
         }
