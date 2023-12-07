@@ -11,9 +11,9 @@ namespace ProjetNarratif.Rooms
         internal override string CreateDescription()
 
         {
-            return "Vous ne savez pas vous etes ou, mais vous avez envie d'explorer et d'entrer dans les differentes salles.\n\n" +
-                " vous apercevez un [porte] a votre droite.\n\n" +
-                "Si vous avez peur vous pouvez revenir a la [toilette]";                                                                          
+            return "Vous ne savez pas vous etes oû, mais vous avez envie d'explorer et d'entrer dans les differentes salles.\n\n" +
+                " Vous apercevez une [porte] à votre droite.\n\n" +
+                "Si vous avez peur, vous pouvez revenir a la [toilette]";                                                                          
             throw new NotImplementedException();
         }
 

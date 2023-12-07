@@ -11,9 +11,9 @@ namespace ProjetNarratif.Rooms
     {
         internal override string CreateDescription()
         {
-            return "Vous apercevez une ombre au loin de cette salle, des lumieres rouges , des chants tres louche selon vous\n\n" +
-                "Vous avez tres peur et donc vous vous refugiez a la plus proche\n\n" +
-                "vous avez le choix entre vous refugiez dans la [salle] la plus proche ou allez vers l'[ombre]";
+            return "Vous apercevez une ombre au loin de cette salle, des lumières rouges , des chants très louches selon vous.  \n\n" +
+                "Vous avez très peur, donc vous vous réfugiez à la salle la plus proche.\n\n" +
+                "Vous avez le choix entre vous réfugiez dans la [salle] la plus proche ou allez vers l'[ombre]";
             throw new NotImplementedException();
         }
 

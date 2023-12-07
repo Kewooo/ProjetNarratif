@@ -41,10 +41,10 @@ namespace ProjetNarratif.Rooms
                         int i = 0;
                         while (i < 10)
                         {
-                            Console.WriteLine("Vous apercevez des videos d'archives tres louches qui peuvent etre tres bonne pour votre investigation.\n\n" +
-                                "Des meutres horribles, des rituels macabres, des actions a glacer le sang...\n\n" +
+                            Console.WriteLine("Vous apercevez des vidéos d'archives très louches qui peuvent être très bonnes pour votre investigation.\n\n" +
+                                "Des meutres horribles, des rituels macabres, des actions à glacer le sang...\n\n" +
                                 "Des frissons vous montes a la peau, vous avez peur soudainement, vous avez le gout de vous en aller,\n\n" +
-                                "Vous decidez de transmettre les fichiers sur votre disque dur.\n\n" +
+                                "Vous décidez de transmettre les fichiers sur votre disque dur.\n\n" +
                                 "Copie des fichiers en cours");
                             Console.Write("[");
                             Console.ForegroundColor = ConsoleColor.Blue;
@@ -65,7 +65,7 @@ namespace ProjetNarratif.Rooms
 
                             Console.Clear();
                         }
-                        Console.WriteLine("Copie Terminee.");
+                        Console.WriteLine("Copie Terminée.");
                         Console.ReadKey();
                         IsHDDCollected = true;
                     } break;
@@ -84,7 +84,7 @@ namespace ProjetNarratif.Rooms
 
                         if (IsHDDCollected == true)
                         {
-                            Console.WriteLine("Bravo,vous vous etes echapper, apres toutes ces atrocites, vous etes un survivant/e\n\n" +
+                            Console.WriteLine("Bravo,vous vous etes echapper, apres toutes ces atrocités, vous êtes un/e survivant/e\n\n" +
                                     "Felicitations!\n\n" +
                                     "A la prochaine.....");
                             Game.Finish();

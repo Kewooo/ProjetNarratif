@@ -12,7 +12,7 @@ namespace ProjetNarratif.Rooms
         {
             ;
             return "Vous ouvrez la porte et ce qui est face a vous est ignoble et cruel;\n\n" +
-                "3 corps demembrer et des ecriture en latin, vous voulez absolument fermer la [porte]";
+                "3 corps démembré et des écritures en latin, vous voulez absolument fermer la [porte]";
             throw new NotImplementedException();
         }
         internal override void ReceiveChoice(string choice)
